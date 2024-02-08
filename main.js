@@ -74,7 +74,7 @@ function operatorCheck(lastPressedButton){
         operation(lastDisplay.textContent,currentDisplay.textContent);
         previousResult=currentDisplay.textContent
     }
-    else if (lastDisplay.textContent!='' && currentDisplay.textContent==='0' && lastPressedButton!='='){
+    else if (lastDisplay.textContent!='' && currentDisplay.textContent==='0' && lastPressedButton!='=' && lastDisplay.textContent.slice(-1)!='='){
         lastDisplay.textContent = lastDisplay.textContent.slice(0,-1) + lastPressedButton;
     }
     
